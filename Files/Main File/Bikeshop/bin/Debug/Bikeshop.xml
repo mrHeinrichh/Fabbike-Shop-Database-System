@@ -1,0 +1,221 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Bikeshop
+</name>
+</assembly>
+<members>
+<member name="T:Bikeshop.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Bikeshop.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Bikeshop.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Bikeshop.caitlin">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.caitlin.cathyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.caitlin.cathskieDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.caitlin.cathyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.caitlin.cathskieRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.caitlin.cathyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.caitlin.cathskieRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport.dtDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport.dtDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport.dtDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport2.crecieptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport2.crecieptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.dsReport2.crecieptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.mechz">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.mechz.mCHZDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.mechz.mCHZRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.mechz.mCHZRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.MiscellaneousexP">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.MiscellaneousexP.misCDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.MiscellaneousexP.misCRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.MiscellaneousexP.misCRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.DataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.DataSet2.recieptszDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.DataSet2.recieptszRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.DataSet2.recieptszRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.orDrdSupp">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.orDrdSupp.suppOrdDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.orDrdSupp.suppOrdRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.orDrdSupp.suppOrdRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.SalaryRecord">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.SalaryRecord.sRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.SalaryRecord.sRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.SalaryRecord.sRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bikeshop.Serv">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bikeshop.Serv.sarvDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bikeshop.Serv.sarvRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bikeshop.Serv.sarvRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="caitlin" targetNamespace="http://tempuri.org/caitlin.xsd" xmlns:mstns="http://tempuri.org/caitlin.xsd" xmlns="http://tempuri.org/caitlin.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="caitlin" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="caitlin" msprop:Generator_UserDSName="caitlin">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="cathy" msprop:Generator_TableClassName="cathyDataTable" msprop:Generator_TableVarName="tablecathy" msprop:Generator_TablePropName="cathy" msprop:Generator_RowDeletingName="cathyRowDeleting" msprop:Generator_RowChangingName="cathyRowChanging" msprop:Generator_RowEvHandlerName="cathyRowChangeEventHandler" msprop:Generator_RowDeletedName="cathyRowDeleted" msprop:Generator_UserTableName="cathy" msprop:Generator_RowChangedName="cathyRowChanged" msprop:Generator_RowEvArgName="cathyRowChangeEvent" msprop:Generator_RowClassName="cathyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="order_Date" msprop:Generator_ColumnVarNameInTable="columnorder_Date" msprop:Generator_ColumnPropNameInRow="order_Date" msprop:Generator_ColumnPropNameInTable="order_DateColumn" msprop:Generator_UserColumnName="order_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Prod_Description" msprop:Generator_ColumnVarNameInTable="columnProd_Description" msprop:Generator_ColumnPropNameInRow="Prod_Description" msprop:Generator_ColumnPropNameInTable="Prod_DescriptionColumn" msprop:Generator_UserColumnName="Prod_Description" type="xs:string" minOccurs="0" />
+              <xs:element name="prodPrice" msprop:Generator_ColumnVarNameInTable="columnprodPrice" msprop:Generator_ColumnPropNameInRow="prodPrice" msprop:Generator_ColumnPropNameInTable="prodPriceColumn" msprop:Generator_UserColumnName="prodPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="brand_Name" msprop:Generator_ColumnVarNameInTable="columnbrand_Name" msprop:Generator_ColumnPropNameInRow="brand_Name" msprop:Generator_ColumnPropNameInTable="brand_NameColumn" msprop:Generator_UserColumnName="brand_Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cathskie" msprop:Generator_TableClassName="cathskieDataTable" msprop:Generator_TableVarName="tablecathskie" msprop:Generator_TablePropName="cathskie" msprop:Generator_RowDeletingName="cathskieRowDeleting" msprop:Generator_RowChangingName="cathskieRowChanging" msprop:Generator_RowEvHandlerName="cathskieRowChangeEventHandler" msprop:Generator_RowDeletedName="cathskieRowDeleted" msprop:Generator_UserTableName="cathskie" msprop:Generator_RowChangedName="cathskieRowChanged" msprop:Generator_RowEvArgName="cathskieRowChangeEvent" msprop:Generator_RowClassName="cathskieRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Service_ID" msprop:Generator_ColumnVarNameInTable="columnService_ID" msprop:Generator_ColumnPropNameInRow="Service_ID" msprop:Generator_ColumnPropNameInTable="Service_IDColumn" msprop:Generator_UserColumnName="Service_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Service_Info" msprop:Generator_ColumnVarNameInTable="columnService_Info" msprop:Generator_ColumnPropNameInRow="Service_Info" msprop:Generator_ColumnPropNameInTable="Service_InfoColumn" msprop:Generator_UserColumnName="Service_Info" type="xs:string" minOccurs="0" />
+              <xs:element name="Service_Date" msprop:Generator_ColumnVarNameInTable="columnService_Date" msprop:Generator_ColumnPropNameInRow="Service_Date" msprop:Generator_ColumnPropNameInTable="Service_DateColumn" msprop:Generator_UserColumnName="Service_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Service_Cost" msprop:Generator_ColumnVarNameInTable="columnService_Cost" msprop:Generator_ColumnPropNameInRow="Service_Cost" msprop:Generator_ColumnPropNameInTable="Service_CostColumn" msprop:Generator_UserColumnName="Service_Cost" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E851A91-9746-4401-B802-74606048197E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Bikeshop.My.MyApplication</StartupObject>
+    <RootNamespace>Bikeshop</RootNamespace>
+    <AssemblyName>Bikeshop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Bikeshop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Bikeshop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Download Shits\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUTTONtransaction.Designer.vb">
+      <DependentUpon>BUTTONtransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BUTTONtransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caitlin.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>caitlin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="caitlin.vb">
+      <DependentUpon>caitlin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDbikeserviceRecord.Designer.vb">
+      <DependentUpon>CRUDbikeserviceRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDbikeserviceRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDprctBikeservice.Designer.vb">
+      <DependentUpon>CRUDprctBikeservice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDprctBikeservice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BUTTONdatamanagement.Designer.vb">
+      <DependentUpon>BUTTONdatamanagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BUTTONdatamanagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectToDb.vb" />
+    <Compile Include="CRUDaccessories.Designer.vb">
+      <DependentUpon>CRUDaccessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDaccessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDbikeservices.Designer.vb">
+      <DependentUpon>CRUDbikeservices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDbikeservices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDbrands.Designer.vb">
+      <DependentUpon>CRUDbrands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDbrands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDcustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDcustomer.Designer.vb">
+      <DependentUpon>CRUDcustomer.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDmechanics.Designer.vb">
+      <DependentUpon>CRUDmechanics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDmechanics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDoperationsexp.Designer.vb">
+      <DependentUpon>CRUDoperationsexp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDoperationsexp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDproducts.Designer.vb">
+      <DependentUpon>CRUDproducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDproducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDpurchrec.Designer.vb">
+      <DependentUpon>CRUDpurchrec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDpurchrec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDsupplier.Designer.vb">
+      <DependentUpon>CRUDsupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDsupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDsuppRecs.Designer.vb">
+      <DependentUpon>CRUDsuppRecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDsuppRecs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDwages.Designer.vb">
+      <DependentUpon>CRUDwages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDwages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport5.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport6.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customerReciept.Designer.vb">
+      <DependentUpon>customerReciept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customerReciept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dsReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReport.vb">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReport2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReport2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReport2.vb">
+      <DependentUpon>dsReport2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EXPENSESREPORT.Designer.vb">
+      <DependentUpon>EXPENSESREPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EXPENSESREPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOME.Designer.vb">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn Form.Designer.vb">
+      <DependentUpon>LogIn Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAINform.Designer.vb">
+      <DependentUpon>MAINform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAINform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mechanicFORM.Designer.vb">
+      <DependentUpon>mechanicFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mechanicFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mechPROFILE.Designer.vb">
+      <DependentUpon>mechPROFILE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mechPROFILE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MechRprt.Designer.vb">
+      <DependentUpon>MechRprt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MechRprt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MechSalaryRpt.Designer.vb">
+      <DependentUpon>MechSalaryRpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MechSalaryRpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mechserv.Designer.vb">
+      <DependentUpon>mechserv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mechserv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MECHWAGEZ.Designer.vb">
+      <DependentUpon>MECHWAGEZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MECHWAGEZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mechz.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mechz.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MiscellaneousexP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MiscellaneousexP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MiscellaneousexP.vb">
+      <DependentUpon>MiscellaneousexP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MiscFee.Designer.vb">
+      <DependentUpon>MiscFee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MiscFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ORDERnow.Designer.vb">
+      <DependentUpon>ORDERnow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORDERnow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orDrdSupp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>orDrdSupp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="recieptcustomer.Designer.vb">
+      <DependentUpon>recieptcustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recieptcustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recieptSupplier.Designer.vb">
+      <DependentUpon>recieptSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recieptSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportszz.Designer.vb">
+      <DependentUpon>reportszz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportszz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALARAYRECORDZ.Designer.vb">
+      <DependentUpon>SALARAYRECORDZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALARAYRECORDZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalaryRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalaryRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="salaryRecordCrystal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>salaryRecordCrystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="salesReport.Designer.vb">
+      <DependentUpon>salesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesReportCrystal.Designer.vb">
+      <DependentUpon>salesReportCrystal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salesReportCrystal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Serv.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Serv.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suppOrd.Designer.vb">
+      <DependentUpon>suppOrd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="suppOrd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suppReciept.Designer.vb">
+      <DependentUpon>suppReciept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="suppReciept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONcustomer.Designer.vb">
+      <DependentUpon>TRANSACTIONcustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONcustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONsupplier.Designer.vb">
+      <DependentUpon>TRANSACTIONsupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONsupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER REGISTER.Designer.vb">
+      <DependentUpon>USER REGISTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USER REGISTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BUTTONtransaction.resx">
+      <DependentUpon>BUTTONtransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDbikeserviceRecord.resx">
+      <DependentUpon>CRUDbikeserviceRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDprctBikeservice.resx">
+      <DependentUpon>CRUDprctBikeservice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BUTTONdatamanagement.resx">
+      <DependentUpon>BUTTONdatamanagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDaccessories.resx">
+      <DependentUpon>CRUDaccessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDbikeservices.resx">
+      <DependentUpon>CRUDbikeservices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDbrands.resx">
+      <DependentUpon>CRUDbrands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDcustomer.resx">
+      <DependentUpon>CRUDcustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDmechanics.resx">
+      <DependentUpon>CRUDmechanics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDoperationsexp.resx">
+      <DependentUpon>CRUDoperationsexp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDproducts.resx">
+      <DependentUpon>CRUDproducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDpurchrec.resx">
+      <DependentUpon>CRUDpurchrec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDsupplier.resx">
+      <DependentUpon>CRUDsupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDsuppRecs.resx">
+      <DependentUpon>CRUDsuppRecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDwages.resx">
+      <DependentUpon>CRUDwages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport5.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport6.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerReciept.resx">
+      <DependentUpon>customerReciept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EXPENSESREPORT.resx">
+      <DependentUpon>EXPENSESREPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOME.resx">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn Form.resx">
+      <DependentUpon>LogIn Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAINform.resx">
+      <DependentUpon>MAINform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mechanicFORM.resx">
+      <DependentUpon>mechanicFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mechPROFILE.resx">
+      <DependentUpon>mechPROFILE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MechRprt.resx">
+      <DependentUpon>MechRprt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MechSalaryRpt.resx">
+      <DependentUpon>MechSalaryRpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mechserv.resx">
+      <DependentUpon>mechserv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MECHWAGEZ.resx">
+      <DependentUpon>MECHWAGEZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiscFee.resx">
+      <DependentUpon>MiscFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORDERnow.resx">
+      <DependentUpon>ORDERnow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recieptcustomer.resx">
+      <DependentUpon>recieptcustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recieptSupplier.resx">
+      <DependentUpon>recieptSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportszz.resx">
+      <DependentUpon>reportszz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALARAYRECORDZ.resx">
+      <DependentUpon>SALARAYRECORDZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salaryRecordCrystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>salaryRecordCrystal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesReport.resx">
+      <DependentUpon>salesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesReportCrystal.resx">
+      <DependentUpon>salesReportCrystal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suppOrd.resx">
+      <DependentUpon>suppOrd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suppReciept.resx">
+      <DependentUpon>suppReciept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONcustomer.resx">
+      <DependentUpon>TRANSACTIONcustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONsupplier.resx">
+      <DependentUpon>TRANSACTIONsupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER REGISTER.resx">
+      <DependentUpon>USER REGISTER.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="caitlin.xsc">
+      <DependentUpon>caitlin.xsd</DependentUpon>
+    </None>
+    <None Include="caitlin.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>caitlin.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="caitlin.xss">
+      <DependentUpon>caitlin.xsd</DependentUpon>
+    </None>
+    <None Include="dsReport.xsc">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="dsReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsReport.xss">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="dsReport2.xsc">
+      <DependentUpon>dsReport2.xsd</DependentUpon>
+    </None>
+    <None Include="dsReport2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReport2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsReport2.xss">
+      <DependentUpon>dsReport2.xsd</DependentUpon>
+    </None>
+    <None Include="mechz.xsc">
+      <DependentUpon>mechz.xsd</DependentUpon>
+    </None>
+    <None Include="mechz.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mechz.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="mechz.xss">
+      <DependentUpon>mechz.xsd</DependentUpon>
+    </None>
+    <None Include="MiscellaneousexP.xsc">
+      <DependentUpon>MiscellaneousexP.xsd</DependentUpon>
+    </None>
+    <None Include="MiscellaneousexP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MiscellaneousexP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="MiscellaneousexP.xss">
+      <DependentUpon>MiscellaneousexP.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="orDrdSupp.xsc">
+      <DependentUpon>orDrdSupp.xsd</DependentUpon>
+    </None>
+    <None Include="orDrdSupp.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>orDrdSupp.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="orDrdSupp.xss">
+      <DependentUpon>orDrdSupp.xsd</DependentUpon>
+    </None>
+    <None Include="SalaryRecord.xsc">
+      <DependentUpon>SalaryRecord.xsd</DependentUpon>
+    </None>
+    <None Include="SalaryRecord.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalaryRecord.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SalaryRecord.xss">
+      <DependentUpon>SalaryRecord.xsd</DependentUpon>
+    </None>
+    <None Include="Serv.xsc">
+      <DependentUpon>Serv.xsd</DependentUpon>
+    </None>
+    <None Include="Serv.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Serv.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Serv.xss">
+      <DependentUpon>Serv.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="recieptsz" msprop:Generator_TableClassName="recieptszDataTable" msprop:Generator_TableVarName="tablerecieptsz" msprop:Generator_TablePropName="recieptsz" msprop:Generator_RowDeletingName="recieptszRowDeleting" msprop:Generator_RowChangingName="recieptszRowChanging" msprop:Generator_RowEvHandlerName="recieptszRowChangeEventHandler" msprop:Generator_RowDeletedName="recieptszRowDeleted" msprop:Generator_UserTableName="recieptsz" msprop:Generator_RowChangedName="recieptszRowChanged" msprop:Generator_RowEvArgName="recieptszRowChangeEvent" msprop:Generator_RowClassName="recieptszRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="custName" msprop:Generator_ColumnVarNameInTable="columncustName" msprop:Generator_ColumnPropNameInRow="custName" msprop:Generator_ColumnPropNameInTable="custNameColumn" msprop:Generator_UserColumnName="custName" type="xs:string" minOccurs="0" />
+              <xs:element name="order_Date" msprop:Generator_ColumnVarNameInTable="columnorder_Date" msprop:Generator_ColumnPropNameInRow="order_Date" msprop:Generator_ColumnPropNameInTable="order_DateColumn" msprop:Generator_UserColumnName="order_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="shipping_fee" msprop:Generator_ColumnVarNameInTable="columnshipping_fee" msprop:Generator_ColumnPropNameInRow="shipping_fee" msprop:Generator_ColumnPropNameInTable="shipping_feeColumn" msprop:Generator_UserColumnName="shipping_fee" type="xs:string" minOccurs="0" />
+              <xs:element name="Prod_Description" msprop:Generator_ColumnVarNameInTable="columnProd_Description" msprop:Generator_ColumnPropNameInRow="Prod_Description" msprop:Generator_ColumnPropNameInTable="Prod_DescriptionColumn" msprop:Generator_UserColumnName="Prod_Description" type="xs:string" minOccurs="0" />
+              <xs:element name="AcceDescription" msprop:Generator_ColumnVarNameInTable="columnAcceDescription" msprop:Generator_ColumnPropNameInRow="AcceDescription" msprop:Generator_ColumnPropNameInTable="AcceDescriptionColumn" msprop:Generator_UserColumnName="AcceDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

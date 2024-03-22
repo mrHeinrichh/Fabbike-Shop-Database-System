@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="orDrdSupp" targetNamespace="http://tempuri.org/orDrdSupp.xsd" xmlns:mstns="http://tempuri.org/orDrdSupp.xsd" xmlns="http://tempuri.org/orDrdSupp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="orDrdSupp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="orDrdSupp" msprop:Generator_UserDSName="orDrdSupp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="suppOrd" msprop:Generator_TableClassName="suppOrdDataTable" msprop:Generator_TableVarName="tablesuppOrd" msprop:Generator_TablePropName="suppOrd" msprop:Generator_RowDeletingName="suppOrdRowDeleting" msprop:Generator_RowChangingName="suppOrdRowChanging" msprop:Generator_RowEvHandlerName="suppOrdRowChangeEventHandler" msprop:Generator_RowDeletedName="suppOrdRowDeleted" msprop:Generator_UserTableName="suppOrd" msprop:Generator_RowChangedName="suppOrdRowChanged" msprop:Generator_RowEvArgName="suppOrdRowChangeEvent" msprop:Generator_RowClassName="suppOrdRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Supplier_Name" msprop:Generator_ColumnVarNameInTable="columnSupplier_Name" msprop:Generator_ColumnPropNameInRow="Supplier_Name" msprop:Generator_ColumnPropNameInTable="Supplier_NameColumn" msprop:Generator_UserColumnName="Supplier_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_Ordered" msprop:Generator_ColumnVarNameInTable="columnDate_Ordered" msprop:Generator_ColumnPropNameInRow="Date_Ordered" msprop:Generator_ColumnPropNameInTable="Date_OrderedColumn" msprop:Generator_UserColumnName="Date_Ordered" type="xs:string" minOccurs="0" />
+              <xs:element name="Payment" msprop:Generator_ColumnVarNameInTable="columnPayment" msprop:Generator_ColumnPropNameInRow="Payment" msprop:Generator_ColumnPropNameInTable="PaymentColumn" msprop:Generator_UserColumnName="Payment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
